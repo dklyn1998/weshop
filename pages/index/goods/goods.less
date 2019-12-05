@@ -1,0 +1,48 @@
+// 黑色背景面包屑导航条
+.bread_list{
+    width: 100%;
+    height:75rpx ;
+    background-color: rgb(55, 56, 59);
+    text{
+        color: #666666;
+        font-size: 30rpx;
+        line-height: 75rpx;
+        margin:0 30rpx ;
+    }
+    .active{
+        color: #FCFBF9;
+    }
+}
+// 下方是商品展示区域
+.goods_info{
+    margin:0 auto ;
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    flex-wrap: wrap;
+    navigator{
+        width: 48%;
+        height: 380rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 20rpx;
+        image{
+            width: 100%;
+        }
+        text{
+            &:nth-of-type(1){
+                color: #666666;
+                font-size: 28rpx;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            &:nth-of-type(2){
+                color: #FF0060;
+                font-size: 24rpx;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+ <!--分类页面，主要实现商品的购物车功能 包括商品的加减-->
+ <!--也是使用包裹，flex三列布局 最后一列使用space-between 首部使用微信原生radio-->
+ <view class='shoppingCar'>
+ <!-- radio插件 小程序原生控制-->
+     <radio class="" value=""  color="#FF0060" bindchange="radioChange"></radio>
+    <!--中间图片区域-->
+    <image src="../../image/kinds/goods.png" class='goods_img' mode='widthFix'/>
+    <!--商品主要信息区域-->
+    <view class='good_info'>
+        <text>夏季新款潮流服饰</text>
+        <text>规格：全部套装【黄色款】</text>
+        <text>￥1333</text>
+    </view>
+    <!-- 删除按钮和商品添加-->
+    <view class='last_btn_area'>
+    <image src="../../image/kinds/删除.png"  class='del_btn' mode='widthFix'/>
+    <view class='add_min'>
+        <image src="../../image/kinds/-.png" class='min_btn' mode='widthFix' />
+        <input value='1' />
+        <image src="../../image/kinds/+.png" class='add_btn' mode='widthFix' />        
+    </view>
+    </view>
+ </view>
+  <view class='shoppingCar'>
+ <!-- radio插件 小程序原生控制-->
+     <radio class="" value=""  color="#FF0060" bindchange="radioChange"></radio>
+    <!--中间图片区域-->
+    <image src="../../image/kinds/goods.png" class='goods_img' mode='widthFix'/>
+    <!--商品主要信息区域-->
+    <view class='good_info'>
+        <text>夏季新款潮流服饰</text>
+        <text>规格：全部套装【黄色款】</text>
+        <text>￥1333</text>
+    </view>
+    <!-- 删除按钮和商品添加-->
+    <view class='last_btn_area'>
+        <image src="../../image/kinds/删除.png"  class='del_btn' mode='widthFix'/>
+        <view class='add_min'>
+            <image src="../../image/kinds/-.png" class='min_btn' mode='widthFix' />
+            <input value='1' />
+            <image src="../../image/kinds/+.png" class='add_btn' mode='widthFix' />        
+        </view>
+    </view>
+ </view>
+<!-- 下方的结算按钮，解决input文本溢出的问题使用cover-view -->
+<view class="bottom_btn">
+    <radio class="" value=""  color="#FF0060" bindchange="radioChange">全选</radio>
+    <view class='right_msg'>
+        <text>总计：￥2666.00</text>
+        <view class='pull_money'>
+            结算
+        </view>
+    </view>
+</view>
+  
+
+
+ 

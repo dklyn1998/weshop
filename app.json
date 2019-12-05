@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/goods/goodsDetail/goodsDetail",
+    "pages/index/goods/goods",
+    "pages/kinds/kinds",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#FF0060",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/indexChoose.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/kinds/kinds",
+        "iconPath": "image/kind.png",
+        "selectedIconPath": "image/kindChoose.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/myChoose.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

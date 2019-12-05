@@ -1,0 +1,90 @@
+<!--- 渲染商品信息需要获取到商品的id然后传参过来  -->
+<!--- 首先是商品的图片 -->
+<image src="../../../../image/goods/goodsDetail/goodsImg.png" mode='widthFix' class='goods_detail_img' />
+<!-- 商品的详情的信息 需要用个div包裹  他有一个左右padding -->
+<view class='goods_detail_msg'>
+    <text class='goods_detail_title'>短款连帽卫衣女春秋装2018新款韩版长袖宽松chic早秋上衣潮薄外套</text>
+    <text class='goods_money'>￥256</text>
+    <!-- 下方是运费销量信息，用flex来调整  有三行 -->
+    <view class='goods_detail_msg_info'>
+        <text>运费：￥6</text>
+        <text>销量：2563</text>
+        <text>库存：22252</text>
+    </view>
+    <!--  领取优惠券方格 -->
+    <view class='coupon'>
+        <view class='coupon_left'>
+            <text>规格</text>
+            <view>领券后至少可减 <view style='color:#FF0060'>￥10</view></view>
+        </view>
+        <view class='coupon_right'>
+            <text>领券</text>
+            <view class='iconfont icon-youjiantou' style='color:#333'></view>
+        </view>
+    </view>
+    <!-- 选择规格区域 -->
+    <view class='choose' bindtap="bindChoose">
+        <view class='choose_left'>
+            <text>选择</text>
+            <view>请选择规格</view>
+        </view>
+        <view class='choose_right'>
+            <view class='iconfont icon-youjiantou' style='color:#333'></view>
+        </view>
+    </view>
+</view>
+<!-- 商品详情 下面主要放图片 -->
+<view class='goods_detail_img'>商品详情</view>
+<image src="../../../../image/goods/goodsDetail/goodsImg.png" mode='widthFix' class='img_goods'/>
+<!-- 固定在最下方的购买信息 -->
+<view class='goods_pay_for'>
+    <view class='kefu'>
+        <image src="../../../../image/goods/goodsDetail/contant.png" mode='widthFix'/>
+        <button open-type='contact'></button>
+        <text>客服</text>
+    </view>
+    <view class='shopping_car'>
+        <image src="../../../../image/goods/goodsDetail/shopping.png"mode='widthFix' />
+        <text>购物车</text>
+    </view>
+    <navigator url="" class='add_shopping_car'>加入购物车</navigator>
+    <navigator url="" class='pay_for'>立即购买</navigator>
+</view>      
+<!--- 黑色背景 -->
+<view class='black_sheet' wx:if="{{isShow!==0}}" bindtap='cancel'></view>
+<!---  红包弹出层 -->
+<!-- 选择规格的事件 为了防止文本层级突出我选择使用cover-view -->
+<view class="choose_info" wx:if="{{isShow==2}}">
+    <text class='choose_info_title'>短款连帽卫衣女春秋装2018新款韩版长袖宽 松chic早秋上衣潮薄外套</text>
+    <!-- 颜色区域 -->
+    <view class='choose_info_color'>
+        <text>颜色</text>
+        <view class='choose_info_color_confirm'>
+                <text class='active'>黑色</text>
+                <text>白色</text>
+        </view>
+    </view>
+    <!-- 尺码区域 -->
+    <view class='choose_info_size'>
+        <text>尺码</text>
+        <view class='choose_info_size_confirm'>
+                <text class='active'>XL</text>
+                <text>S</text>
+                <text>M</text>
+                <text>L</text>
+        </view>
+    </view>
+    <!-- 数量区域 -->
+    <view class='choose_info_num'>
+        <text>数量</text>
+        <!-- 删除按钮和商品添加-->
+    <view class='last_btn_area'>
+        <view class='add_min'>
+            <image src="../../../../image/kinds/-.png" class='min_btn' mode='widthFix' />
+            <input value='1' />
+            <image src="../../../../image/kinds/+.png" class='add_btn' mode='widthFix' />        
+        </view>
+    </view>
+    </view>
+</view>
+  

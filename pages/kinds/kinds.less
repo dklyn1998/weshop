@@ -1,0 +1,115 @@
+// 整体背景色
+page{
+    background-color: rgb(237, 237, 237);
+}
+.shoppingCar{
+    background-color: #fff;
+    margin: 30rpx auto;
+    width: 85%;
+    height: 210rpx;
+    border-radius: 10rpx;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    // 添加一个内边距
+    padding: 0 30rpx;
+    // radio按钮
+    radio{
+        width: 30rpx;
+        height: 30rpx;
+    }
+    // 商品图片
+    .goods_img{
+        width: 160rpx;
+        border-radius: 10rpx;
+    }
+    // 商品主要信息
+    .good_info{
+        display: flex;
+        flex-direction: column;
+        text{
+            &:nth-child(1){
+                color: #333333;
+                font-size: 26rpx;
+            }
+            &:nth-child(2){
+                color: #999999;
+                font-size: 18rpx;
+            }
+            &:nth-child(3){
+                color: #FF0060;
+                font-size: 32rpx;
+                font-weight: bold;
+            }
+        }
+    }
+    // 删除按钮和商品添加
+    .last_btn_area{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 100%;
+        .del_btn{
+            width:22rpx;
+        }
+        // 增加减少按钮实现
+        .add_min{
+            display: flex;
+            width: 120rpx;
+            height:40rpx ;
+            border-radius: 20rpx;
+            justify-content: space-between;
+            align-items: center;
+            border: 1rpx solid #E5E5E5;
+            image{
+                width: 16rpx;
+                margin: 0 auto;
+            }
+            input{
+                // min-width:40rpx;
+                width: 40rpx;
+                border-left: 1rpx solid #E5E5E5;
+                border-right: 1rpx solid #E5E5E5;
+                text-align: center;
+                font-size: 22rpx;
+                color: #333333;
+            }
+        }
+
+    }
+}
+// 下方的结算按钮，解决input文本溢出的问题使用cover-view
+.bottom_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30rpx;
+    background-color: #fff;
+    height: 100rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 30rpx;
+    color: #666666;
+    .right_msg{
+        display: flex;
+        align-items: center;
+        text{
+            color: #FF0060;
+        }
+        .pull_money{
+            width: 190rpx;
+            height: 60rpx;
+            background-color: #FF0060;
+            border-radius: 30rpx;
+            text-align: center;
+            color: #fff;
+            line-height: 60rpx;
+            margin-left:20rpx ;
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+<!-- 黑色背景面包屑导航条 -->
+<view class='bread_list'>
+    <text class='active'>全部</text>
+    <text>外套</text>
+    <text>内搭</text>
+    <text>裤装</text>
+</view>
+<!--- 下方是商品展示区域 注意用navigator包裹 因为涉及到跳转到商品详情页面 -->
+<view class='goods_info'>
+    <navigator url="">
+        <image src="../../../image/goods/goods_img.png"mode='widthFix' />
+        <text>时尚翻领休闲中长款毛哈哈哈哈哈哈</text>
+        <text>¥289</text>
+    </navigator>
+    <navigator url="">
+        <image src="../../../image/goods/goods_img.png" mode='widthFix' />
+        <text>时尚翻领休闲中长款毛哈哈哈哈哈哈</text>
+        <text>¥289</text>
+    </navigator>
+    <navigator url="">
+        <image src="../../../image/goods/goods_img.png" mode='widthFix'/>
+        <text>时尚翻领休闲中长款毛哈哈哈哈哈哈</text>
+        <text>¥289</text>
+    </navigator>
+    <navigator url="">
+        <image src="../../../image/goods/goods_img.png"mode='widthFix' />
+        <text>时尚翻领休闲中长款毛哈哈哈哈哈哈</text>
+        <text>¥289</text>
+    </navigator>
+</view>

@@ -1,0 +1,102 @@
+page {
+  background-color: #ededed;
+}
+.shoppingCar {
+  background-color: #fff;
+  margin: 30rpx auto;
+  width: 85%;
+  height: 210rpx;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+.shoppingCar radio {
+  width: 30rpx;
+  height: 30rpx;
+}
+.shoppingCar .goods_img {
+  width: 160rpx;
+  border-radius: 10rpx;
+}
+.shoppingCar .good_info {
+  display: flex;
+  flex-direction: column;
+}
+.shoppingCar .good_info text:nth-child(1) {
+  color: #333333;
+  font-size: 26rpx;
+}
+.shoppingCar .good_info text:nth-child(2) {
+  color: #999999;
+  font-size: 18rpx;
+}
+.shoppingCar .good_info text:nth-child(3) {
+  color: #FF0060;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.shoppingCar .last_btn_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 100%;
+}
+.shoppingCar .last_btn_area .del_btn {
+  width: 22rpx;
+}
+.shoppingCar .last_btn_area .add_min {
+  display: flex;
+  width: 120rpx;
+  height: 40rpx ;
+  border-radius: 20rpx;
+  justify-content: space-between;
+  align-items: center;
+  border: 1rpx solid #E5E5E5;
+}
+.shoppingCar .last_btn_area .add_min image {
+  width: 16rpx;
+  margin: 0 auto;
+}
+.shoppingCar .last_btn_area .add_min input {
+  width: 40rpx;
+  border-left: 1rpx solid #E5E5E5;
+  border-right: 1rpx solid #E5E5E5;
+  text-align: center;
+  font-size: 22rpx;
+  color: #333333;
+}
+.bottom_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  background-color: #fff;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #666666;
+}
+.bottom_btn .right_msg {
+  display: flex;
+  align-items: center;
+}
+.bottom_btn .right_msg text {
+  color: #FF0060;
+}
+.bottom_btn .right_msg .pull_money {
+  width: 190rpx;
+  height: 60rpx;
+  background-color: #FF0060;
+  border-radius: 30rpx;
+  text-align: center;
+  color: #fff;
+  line-height: 60rpx;
+  margin-left: 20rpx ;
+}
