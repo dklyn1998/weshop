@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    isCheck:false,//radio是否选中
+    isCheck1:false,//radio是否选中
+    inputValue:1,//设置input的值
   },
 
   /**
@@ -17,6 +19,33 @@ Page({
 // raido监听事件
   radioChange: function (e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value)
+    var isCheck=!this.data.isCheck
+    this.setData({
+      isCheck
+    })
+  },
+  radioChange1: function (e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value)
+    var isCheck1=!this.data.isCheck1
+    this.setData({
+      isCheck1
+    })
+  },
+  // 加减的点击事件
+  bindCal:function (e) {
+    var numAdd=this.data.inputValue+ parseInt(e.target.dataset.cul) 
+    if(numAdd<=0) return
+    this.setData({
+      inputValue:numAdd
+    })
+    console.log(this.data.inputValue)
+  },
+  // 跳转到结算详情页面
+  bindGoNext:function(){
+    wx.navigateTo({
+      url: './submit/submit',
+    });
+      
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

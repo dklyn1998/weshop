@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/user/user",
-    "pages/kinds/submit/submit",
+    "pages/index/index",
+    "pages/kinds/kinds",
     "pages/index/goods/goodsDetail/goodsDetail",
     "pages/index/goods/goods",
-    "pages/kinds/kinds",
-    "pages/index/index"
+    "pages/user/safe/safe",
+    "pages/user/user",
+    "pages/kinds/submit/submit"
   ],
   "window": {
     "backgroundTextStyle": "light",

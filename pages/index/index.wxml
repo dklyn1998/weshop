@@ -1,13 +1,13 @@
 <!-- 首页部分 -->
 <!-- 主要是图片和上面的文字 使用绝对定位来使用 并且超链接跳转 使用navigator来包裹 -->
-<navigator url="" redirect class='pic_text'>
+<navigator url="../index/goods/goods" class='pic_text'>
     <image src="../../image/index/manuni.png" mode='widthFix'/>
     <view class='text_area'>
     <text>男装会场入口</text>
     <text>Men's clothing venue entrance</text>
     </view>
 </navigator>
-<navigator url="" class='pic_text'>
+<navigator url="../index/goods/goods" class='pic_text'>
     <image src="../../image/index/manwear.png"mode='widthFix' />
     <view class='text_area'>
         <text>男饰会场入口</text>
@@ -15,14 +15,14 @@
     </view>
     
 </navigator>
-<navigator url="" class='pic_text'>
+<navigator url="../index/goods/goods" class='pic_text'>
     <image src="../../image/index/manfoot.png" mode='widthFix' />
     <view class='text_area'>
     <text>潮鞋会场入口</text>
     <text>Men's clothing venue entrance</text>
     </view>
 </navigator>
-<navigator url="" class='pic_text'>
+<navigator url="../index/goods/goods" class='pic_text'>
     <image src="../../image/index/manuni.png" mode='widthFix'/>
     <view class='text_area'>
     <text>男装会场入口</text>

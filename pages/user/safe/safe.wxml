@@ -1,0 +1,18 @@
+<view class='safe_main'>
+    <text class='safe_title'>修改密码</text>
+    <view class='safe_form'>
+        <view class="safe_form_info">
+            <image src="../../../image/user/safe/jiumima.png"mode='widthFix' />
+            <input  placeholder="请输入旧密码"  />
+        </view>
+        <view class="safe_form_info">
+            <image src="../../../image/user/safe/xingmima.png" mode='widthFix'/>
+            <input  placeholder="请输入新密码"  />
+        </view>
+        <view class="safe_form_info">
+            <image src="../../../image/user/safe/xingmima.png" mode='widthFix'/>
+            <input  placeholder="再一次输入新密码"  />
+        </view>
+    </view>
+    <button bindtap="makeSure">确定</button>
+</view> 

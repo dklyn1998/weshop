@@ -43,12 +43,12 @@
         <button open-type='contact'></button>
         <text>客服</text>
     </view>
-    <view class='shopping_car'>
-        <image src="../../../../image/goods/goodsDetail/shopping.png"mode='widthFix' />
+    <view class='shopping_car' bindtap='bindToShoppingCar'>
+        <image src="../../../../image/goods/goodsDetail/shopping.png" mode='widthFix' />
         <text>购物车</text>
     </view>
     <navigator url="" class='add_shopping_car'>加入购物车</navigator>
-    <navigator url="" class='pay_for'>立即购买</navigator>
+    <navigator url="../../../kinds/submit/submit" class='pay_for'>立即购买</navigator>
 </view>      
 <!--- 黑色背景 -->
 <view class='black_sheet' wx:if="{{isShow!==0}}" bindtap='cancel'></view>
@@ -64,18 +64,18 @@
     <view class='choose_info_color'>
         <text>颜色</text>
         <view class='choose_info_color_confirm'>
-                <text class='active'>黑色</text>
-                <text>白色</text>
+                <text class='{{isColor==1?"active":""}}' bindtap='ColorChoose' data-color='1'>黑色</text>
+                <text class='{{isColor==2?"active":""}}' bindtap='ColorChoose' data-color='2'>白色</text>
         </view>
     </view>
     <!-- 尺码区域 -->
     <view class='choose_info_size'>
         <text>尺码</text>
         <view class='choose_info_size_confirm'>
-                <text class='active'>XL</text>
-                <text>S</text>
-                <text>M</text>
-                <text>L</text>
+                <text class='{{isSize==1?"active":""}}' bindtap='sizeChoose' data-size='1'>XL</text>
+                <text class='{{isSize==2?"active":""}}' bindtap='sizeChoose' data-size='2'>S</text>
+                <text class='{{isSize==3?"active":""}}' bindtap='sizeChoose' data-size='3'>M</text>
+                <text class='{{isSize==4?"active":""}}' bindtap='sizeChoose' data-size='4'>L</text>
         </view>
     </view>
     <!-- 数量区域 -->
@@ -84,9 +84,9 @@
         <!-- 删除按钮和商品添加-->
     <view class='last_btn_area'>
         <view class='add_min'>
-            <image src="../../../../image/kinds/-.png" class='min_btn' mode='widthFix' />
-            <input value='1' />
-            <image src="../../../../image/kinds/+.png" class='add_btn' mode='widthFix' />        
+            <image src="../../../../image/kinds/-.png" class='min_btn' mode='widthFix' data-cul='-1' bindtap='bindCal' />
+            <input value='{{inputValue}}' />
+            <image src="../../../../image/kinds/+.png" class='add_btn' mode='widthFix' data-cul='1' bindtap='bindCal' />        
         </view>
     </view>
     </view>

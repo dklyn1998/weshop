@@ -1,18 +1,17 @@
-// pages/index/goods/goods.js
+// pages/user/safe/safe.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    // 设置类型的值
-    currentData:1
+
   },
-  bindType:function(e){
-    this.setData({
-      currentData:e.currentTarget.dataset.type,
-    })
-    console.log(this.currentData)
+  makeSure:function(){
+    wx.navigateBack({
+      delta: 1
+    });
+      
   },
   /**
    * 生命周期函数--监听页面加载

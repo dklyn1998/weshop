@@ -1,10 +1,16 @@
+// 整个页面的颜色
+page{
+    background-color: #F3F3F3;
+}
 .manin_area{
     display: flex;
     flex-direction: column;
+    
     // 用户头像、信息区域
     .user_info{
         display: flex;
         margin: 100rpx 0 30rpx 50rpx;
+        
         image{
             width: 100rpx;
             border-radius: 50%;
@@ -49,6 +55,7 @@
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
+        background-color: #fff;
         margin-top: 50rpx;
         text{
             &:nth-of-type(1){
@@ -66,7 +73,7 @@
         display: flex;
         justify-content: space-around;
         height: 100rpx;
-        background-color: rgba(255,255,255,.35);
+        background-color: #fff;
         .order_info_area{
             display: flex;
             flex-direction: column;
@@ -76,6 +83,76 @@
                 font-size: 26rpx;
                 color: #313131;
             }
+        }
+    }
+    // 我的服务区域
+    .my_suver{
+        padding: 20rpx;
+        font-size: 30rpx;
+        background-color: #fff;
+    }
+    .my_suver_info{
+        navigator{
+            padding: 0 20rpx;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 90rpx;
+            background-color: #fff;
+            border:1rpx soild #ECECEC;
+            .my_suver_info_img{
+                    width: 29rpx;
+            }
+            .my_suver_info_msg{
+                display: flex;
+                justify-content: space-between;
+                font-size: 28rpx;
+                color:#4F4F4F ;
+                align-items: center;
+                width: 100%;
+                margin-left: 20rpx;
+            }
+            image{
+                width: 27rpx;
+                height: 21rpx;
+            }
+        }
+    }
+    // 客服服务
+    .kefu_server{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 90rpx;
+        padding: 0 20rpx;
+        box-sizing: border-box;
+        margin: 30rpx 0;
+        background-color: #fff;
+        .kefu_suver_info_img{
+            width: 35rpx;
+        }
+        .kefu_server_info{
+            display: flex;
+            justify-content: space-between;
+            font-size: 28rpx;
+            color:#4F4F4F ;
+            align-items: center;
+            width: 100%;
+            margin-left: 20rpx;
+            position: relative;
+        }
+        image{
+            width: 27rpx;
+            height: 21rpx;
+        }
+        button{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            min-height: 40rpx;
+            height: 50rpx;
+            background-color: rgba(255,255,255,0);
         }
     }
 }

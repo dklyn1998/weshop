@@ -13,18 +13,18 @@
         </view>
         <!-- app的信息 -->
         <view class='app_info'>
-            <view class='app_info_area'>
+            <navigator class='app_info_area'>
                 <text>5</text>
                 <text>优惠券</text>
-            </view>
-            <view class='app_info_area'>
+            </navigator>
+            <navigator class='app_info_area'>
                 <text>3</text>
                 <text>购物车</text>
-            </view>
-            <view class='app_info_area'>
+            </navigator>
+            <navigator class='app_info_area'>
                 <text>65</text>
                 <text>收藏</text>
-            </view>
+            </navigator>
         </view>
         <!-- 下方我的订单区域 -->
         <view class='my_order'>
@@ -33,23 +33,63 @@
         </view>
         <!-- 订单的信息 -->
         <view class='order_info'>
-            <view class='order_info_area'>
+            <navigator class='order_info_area'>
                 <text>1</text>
                 <text>待付款</text>
-            </view>
-            <view class='order_info_area'>
+            </navigator>
+            <navigator class='order_info_area'>
                 <text>2</text>
                 <text>待发货</text>
-            </view>
-            <view class='order_info_area'>
+            </navigator>
+            <navigator class='order_info_area'>
                 <text>3</text>
                 <text>待收货</text>
-            </view>
-            <view class='order_info_area'>
+            </navigator>
+            <navigator class='order_info_area'>
                 <text>0</text>
                 <text>退款/售后</text>
-            </view>
+            </navigator>
         </view>
+        <!-- 我的服务区域 -->
+        <view class='my_suver'>
+            <text>我的服务</text>
+        </view>
+        <!-- 服务详情 -->
+        <view class='my_suver_info'>
+            <navigator url="" class='my_suver_info_nav'>
+                <image src="../../image/user/dizhi.png"  class='my_suver_info_img' mode='widthFix' />
+                <view class='my_suver_info_msg'>
+                    <text>收货地址</text>
+                    <image src="../../image/user/next.png" />
+                </view>
+            </navigator>
+            <navigator url="" >
+                <image src="../../image/user/fenxiang.png"  class='my_suver_info_img' mode='widthFix'/>
+                <view class='my_suver_info_msg'>
+                    <text>分享</text>
+                    <image src="../../image/user/next.png" />
+                </view>
+            </navigator>
+            <navigator url="./safe/safe">
+                <image src="../../image/user/anquan.png"  class='my_suver_info_img' mode='widthFix'/>
+                <view class='my_suver_info_msg'>
+                    <text>安全中心</text>
+                    <image src="../../image/user/next.png" />
+                </view>
+            </navigator>
+        </view>
+        <!--- 客服服务 -->
+        <navigator url="" class='kefu_server'>
+                <image src="../../image/user/kefu.png"  class='kefu_suver_info_img' mode='widthFix' />
+                <view class='kefu_server_info'>
+                    <text>收货地址</text>
+                    <view>
+                        <text>400-155-5555</text>
+                        <image src="../../image/user/next.png"  />
+                    </view>
+                    <button size="default" open-type='contact' ></button>
+                </view>
+            </navigator>
     </view>
 </block>
 </view>
