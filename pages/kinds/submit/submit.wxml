@@ -1,0 +1,54 @@
+<!-- 收货地址区域 -->
+<view class='adress'>
+    <view class='adress_detail'>
+        <text>小豆子</text>
+        <text>13564257853</text>
+        <!-- 字体图标 -->
+        <text class="iconfont icon-xiugai"> 修改</text>
+    </view>
+    <view class='adress_info'>
+        <text>默认</text>
+        <text>地址：上海浦东新区东方路3539号2号楼3楼 </text>
+    </view>
+</view>
+<!-- 商品详细信息 -->
+<view class='goods_detail'>
+    <image src="../../../image/kinds/goods.png" />
+    <view class='goods_detail_info'>
+        <text>设计图网夏季时尚轻奢女士服装套装</text>
+        <text>夏季女士套装 </text>  
+        <text>规格：全部套装【黄色款】</text>
+        <view class='goods_detail_info_num_money'>
+            <text>￥1333</text>
+            <text>x1</text>
+        </view>      
+    </view>
+</view>
+<!-- 下方是商品信息区域  -->
+<view class='goods_info'>
+    <view class='goods_info_style'>
+        <text>商品总额：</text>
+        <text>￥1333</text>
+    </view>
+    <view class='goods_info_style'>
+        <text>活动满减：</text>
+        <text>￥0</text>
+    </view>
+    <view class='goods_info_style'>
+        <text>优惠券</text>
+        <text>-￥20 ></text>
+    </view>
+    <view class='goods_info_style'>
+        <text>运费：</text>
+        <text>￥0</text>
+    </view>
+    <view class='goods_info_style'>
+        <text>实付金额</text>
+        <text>￥1313</text>
+    </view>
+    <view class='liuyan'>
+        <text>留言:</text>
+        <textarea placeholder="给卖家留言" />
+    </view>
+</view>
+<button>提交订单</button>

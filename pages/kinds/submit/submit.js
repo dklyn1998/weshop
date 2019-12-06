@@ -1,11 +1,11 @@
-// pages/index/goods/goodsDetail/goodsDetail.js
+// pages/kinds/submit/submit.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isShow:0//设置背景和其他点击事件内容的出现与颖仓
+
   },
 
   /**
@@ -14,24 +14,7 @@ Page({
   onLoad: function (options) {
 
   },
-  // 领红包的点击事件
-  bindRedBag:function () {
-    this.setData({
-      isShow:1
-    })
-  },
-  // 选择规格的点击事件
-  bindChoose:function(){
-    this.setData({
-      isShow:2
-    })
-  },
-  // 取消规格和背景和红包
-  cancel:function(){
-    this.setData({
-      isShow:0
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

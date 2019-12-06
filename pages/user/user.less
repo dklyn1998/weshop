@@ -1,0 +1,82 @@
+.manin_area{
+    display: flex;
+    flex-direction: column;
+    // 用户头像、信息区域
+    .user_info{
+        display: flex;
+        margin: 100rpx 0 30rpx 50rpx;
+        image{
+            width: 100rpx;
+            border-radius: 50%;
+        }
+        .user_name_id{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 20rpx;
+            text{
+                &:nth-of-type(1){
+                    font-size: 32rpx;
+                    color: #3A3A3A;
+                }
+                &:nth-of-type(2){
+                    font-size: 26rpx;
+                    color: #8F7D6D;
+                }
+            }
+        }
+    }
+    // 用户app的信息
+    .app_info{
+        display: flex;
+        justify-content: space-around;
+        height: 120rpx;
+        background-color: rgba(255,255,255,.35);
+        .app_info_area{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text{
+                font-size: 36rpx;
+                color: #313131;
+            }
+        }
+    }
+    // 我的订单区域
+    .my_order{
+        padding: 20rpx;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50rpx;
+        text{
+            &:nth-of-type(1){
+                font-size: 30rpx;
+                color: #313131;
+            }
+            &:nth-of-type(2){
+                font-size: 28rpx;
+                color: #ACACAC;
+            }
+        }
+    }
+    // 订单的信息
+    .order_info{
+        display: flex;
+        justify-content: space-around;
+        height: 100rpx;
+        background-color: rgba(255,255,255,.35);
+        .order_info_area{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text{
+                font-size: 26rpx;
+                color: #313131;
+            }
+        }
+    }
+}
+

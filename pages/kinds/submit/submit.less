@@ -1,0 +1,181 @@
+// 字体图标的引入
+@font-face {
+    font-family: 'iconfont';
+    src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAALQAA0AAAAABrwAAAJ8AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GVgCCQhEICoEsgSgLCgABNgIkAxAEIAWFCAcxG8QFyI7CtuUTczExMRwijPLijOf/f+zbPu9dxL1Zm4RW8ypWWdP4DdFKJTF5CI1KxBtJJX//a03f5kJUILeuBKpTVdZVCLsXgn/pxF1sAXF8ZYUEVK0lY27qpjYJJ7/bxITDLtoWBRxQFHg0bdFY2HnaZQGmmnKD8wYfbemJSFYvBF6dl9uB976ncntvhulYCJrouig0pOQRJtBum16Ah+D+fMX22GkmdLbt4PmuabR+FNSkDAzdWc3gGALo6FiOgRGKYDmz1aCU8FEYBnhH6SECZCIBpKFBnyfAKTM00ECByWjYCXYDKAC09bOz3tcfvZY3n32euzePn06d/uxpeR0875p1/7qq5+7ujmkv32Kzmws3c4tmtubGBvNpfX3707jeyU71o3OAvcaqney7r8dj1t/xhTbddn1cT0jbuG/2CvjGLXuH+ke+LD+dO2U7Dze2S5vAm5vXAIIwa7Sgesw38t/uKo2wmWd43H8p44DJGggN5zcU6L8QAEAVoFDMEJSdTKBhqqkYApjrGwEsUIOBmOwoBppJrmGgm+ymgDLZEwETTPMcARNN9gEBU21LOxiYZl420aWmYCs4UszWLjUznZO62TS2xGVpgoXupIlme5SmOu4/f5qNicFpjxRhAmntNG5SFgyaEhcjU4iTqbvisHeCv6dHC6XDvR44TFBpIiak4O+zsMHDK/A4ISUtGOQa1WmAVVP8xrqGqOyB5BghVc8haRmqJoRInJQSF8V1J5ElRETEcQn3KyHCFFIHB+7WdEZtIpLrLHi7FC526D+8zwEXEZLQol49mXKwzpS4KCyCYZnhfAmOI3TAisNUZhQSwp02cTSoqRNB) format('woff2'),
+        url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAScAA0AAAAABrwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAEgAAAABoAAAAcicPHV0dERUYAAARgAAAAHgAAAB4AKQAKT1MvMgAAAaAAAABCAAAAVj3TSVdjbWFwAAAB9AAAAD4AAAFCAA/rEGdhc3AAAARYAAAACAAAAAj//wADZ2x5ZgAAAkAAAACsAAAArFbrTR5oZWFkAAABMAAAADAAAAA2FzvkS2hoZWEAAAFgAAAAHQAAACQHzgOFaG10eAAAAeQAAAAPAAAAEAwAAA1sb2NhAAACNAAAAAoAAAAKAFYAAG1heHAAAAGAAAAAHgAAACABEABAbmFtZQAAAuwAAAFJAAACiCnmEVVwb3N0AAAEOAAAAB8AAAAx04ht3HjaY2BkYGAAYvkKPul4fpuvDNwsDCBwi/+COpzm/b+A+QNzApDLwcAEEgUA7VMJPXjaY2BkYGBu+N/AEMPCAALMHxgYGVABCwBYxgNcAAAAeNpjYGRgYGBhMGFgYgABEMkFhAwM/8F8BgAN+AFRAAB42mNgZGFgnMDAysDA1Ml0hoGBoR9CM75mMGLkAIoysDIzYAUBaa4pDA7PU5+nMjf8b2CIYW5gaAAKM4LkAOqvDKcAAHjaY2GAABYI5gUAAI0AGgB42mNgYGBmgGAZBkYGELAB8hjBfBYGBSDNAoRA/vPU//8hpMQ8qEoGRjYGGJOBkQlIMDGgAkaGYQ8ArOQIBgAAAAAAAAAAAAAAVgAAAAIADf+gA/ADYAAjADMAAAUhLgEnET4BNyEyHgEGIyEOAQcRHgEXIT4BNxE0NjIWFREOASUiJicmNDcBNjIWFAcBDgEDLf2ARVoBAVpFAe0PFgERD/4NJzIBATgnAoAoNwESHREGXP2iBQ8FCgoCwAoYFAr9QAQKYAJZRQKARVkCER4RATco/YAoNwEBNygBsw8REQ/+TUVZ3ggFChkKAoAJExkK/YAJBAAAAHjafZA9TgMxEIWf8wckEkIgqF1RANr8lCkTKfQIpaNINt6QaNdeeZ1IOQEtFQeg5RgcgBsg0XIKXpZJkyJr7ejzm5nnsQGc4xsK/98l7oQVjvEoXMERMuEq9RfhGvlduI4WPoUb1H+Em7hVA+EWLtQbHVTthLub0m3LCmcYCFdwiifhKvWVcI38KlzHFT6EG9S/hJsY41e4hWtlqQzhYTBBYJxBY4oN4wIxHCySMgbWoTn0ZhLMTE83ehE7mzgbKO9XYpcDHmg554Ap7T23Zr5KJ/5gy4HUmG4eBUu2KY0uInQoG18snNXdqHOw/Z7ttrTYv2uBNcfsUQ1s1Pw92zPSSGwMr5CSNfIyt6QSU49oa6zxu2cp1vNeCIlOvMv0iMeaNHU6925p4sDi5/KMHH20uZI996gcPmNZCHm/3U7EIIpdhj+T2HEZAAAAeNpjYGKAAC4wyciADljAokyMTGwVmaXpiZkAC/cCpQAAAAAB//8AAgABAAAADAAAABYAAAACAAEAAwADAAEABAAAAAIAAAAAeNpjYGBgZACCq0vUOUD0Lf4L6jAaADoDBWoAAA==) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-xiugai:before {
+    content: "\e765";
+  }
+//   全局背景色
+page{
+    background-color: rgb(237,237,237);
+}
+//   收货地址
+.adress{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+    height: 120rpx;
+    margin: 40rpx auto;
+    background-color: #fff;
+    border-radius: 10rpx;
+    padding: 15rpx 25rpx;
+    box-sizing: border-box;
+    .adress_detail{
+        width: 100%;
+        display: flex;
+        text{
+            font-size: 26rpx;
+            color: #3D413F;
+            margin-right: 30rpx;
+            &:nth-of-type(3){
+                text-align: right;
+                flex: 1;
+                display: block;
+                font-size: 24rpx;
+                font-weight: bold;
+                color: #868686;
+            }
+        }
+    }
+    .adress_info{
+        width: 100%;
+        text{
+            font-size: 21rpx;
+            &:nth-of-type(1){
+                color: #FF0060;
+                font-weight: bold;
+                padding: 2rpx 10rpx;
+                border: 1rpx solid #FF0060;
+                text-align: center;
+                margin-right: 45rpx;
+            }
+            &:nth-of-type(2){
+                color: #868686;
+                font-weight: bold;
+            }
+        }
+    }
+}
+// 商品区域
+.shoppingCar{
+    background-color: #fff;
+    margin: 30rpx auto;
+    width: 85%;
+    height: 210rpx;
+    border-radius: 10rpx;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    // 添加一个内边距
+    padding: 0 30rpx;
+    // radio按钮
+    radio{
+        width: 30rpx;
+        height: 30rpx;
+    }
+    // 商品图片
+    .goods_img{
+        width: 160rpx;
+        border-radius: 10rpx;
+    }
+}
+// 商品主要信息
+.goods_detail{
+    display: flex;
+    width: 95%;
+    padding: 25rpx;
+    margin: 0 auto;
+    border-radius: 10rpx 10rpx 0 0 ;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid rgba(181, 181, 181, .2);
+    image{
+        width: 150rpx;
+        height: 150rpx;
+        margin-right: 30rpx;
+    }
+    .goods_detail_info{
+        font-size: 20rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        text{
+            &:nth-of-type(3){
+                color: #999999;
+            }
+        }
+        .goods_detail_info_num_money{
+            display: flex;
+            justify-content: space-between;
+            font-size: 22rpx;
+            text{
+                &:nth-of-type(1){
+                    color: #FF0060;
+                }
+            }
+        }
+    }
+}
+// 商品信息区域
+.goods_info{
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0 0 10rpx 10rpx;
+    padding: 25rpx;
+    box-sizing: border-box;
+    .goods_info_style{
+        border-bottom: 1rpx solid rgba(181, 181, 181, .2);
+        height: 70rpx;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 26rpx;
+        font-weight: bold;
+        text{
+            &:nth-last-of-type(1){
+                font-weight: normal;
+                color: #FF0060;
+            }
+        }
+    }
+    // 留言区域
+    .liuyan{
+        display: flex;
+        text{
+            font-size: 26rpx;
+            font-weight: bold;
+        }
+        textarea{
+            padding: 0 30rpx;
+            box-sizing: border-box;
+            height: 200rpx;
+        }
+    }
+}
+// 底部button按钮
+button{
+    margin-top: 100rpx;
+    background-color: #FF0060;
+    color: #fff;
+    border-radius:40rpx ;
+    height: 80rpx;
+    font-weight: normal;
+}
+button&:not([size='mini']) {
+    width:95%
+}

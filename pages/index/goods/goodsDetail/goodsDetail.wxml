@@ -12,7 +12,7 @@
         <text>库存：22252</text>
     </view>
     <!--  领取优惠券方格 -->
-    <view class='coupon'>
+    <view class='coupon' bindtap="bindRedBag">
         <view class='coupon_left'>
             <text>规格</text>
             <view>领券后至少可减 <view style='color:#FF0060'>￥10</view></view>
@@ -52,7 +52,11 @@
 </view>      
 <!--- 黑色背景 -->
 <view class='black_sheet' wx:if="{{isShow!==0}}" bindtap='cancel'></view>
-<!---  红包弹出层 -->
+<!---  红包弹出层 红包的弹出层，因为没有设计图只能给出一个样子没有内容 -->
+<view class='red_bag' wx:if="{{isShow==1}}">
+    红包
+</view>
+
 <!-- 选择规格的事件 为了防止文本层级突出我选择使用cover-view -->
 <view class="choose_info" wx:if="{{isShow==2}}">
     <text class='choose_info_title'>短款连帽卫衣女春秋装2018新款韩版长袖宽 松chic早秋上衣潮薄外套</text>

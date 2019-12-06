@@ -1,7 +1,7 @@
  <!--分类页面，主要实现商品的购物车功能 包括商品的加减-->
  <!--也是使用包裹，flex三列布局 最后一列使用space-between 首部使用微信原生radio-->
  <view class='shoppingCar'>
- <!-- radio插件 小程序原生控制-->
+  <!-- radio插件 小程序原生控制-->
      <radio class="" value=""  color="#FF0060" bindchange="radioChange"></radio>
     <!--中间图片区域-->
     <image src="../../image/kinds/goods.png" class='goods_img' mode='widthFix'/>

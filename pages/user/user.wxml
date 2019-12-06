@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="userinfo">
+<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取用户信息 </button>
+<block wx:else>
+    <view class='manin_area'>
+    <!-- 用户头像、信息 -->
+        <view class='user_info'>
+            <image src="{{userInfo.avatarUrl}}" mode='widthFix' />
+            <view class='user_name_id'>
+                <text>{{userInfo.nickName}}</text>
+                <text>ID:123456789</text>
+            </view>
+        </view>
+        <!-- app的信息 -->
+        <view class='app_info'>
+            <view class='app_info_area'>
+                <text>5</text>
+                <text>优惠券</text>
+            </view>
+            <view class='app_info_area'>
+                <text>3</text>
+                <text>购物车</text>
+            </view>
+            <view class='app_info_area'>
+                <text>65</text>
+                <text>收藏</text>
+            </view>
+        </view>
+        <!-- 下方我的订单区域 -->
+        <view class='my_order'>
+            <text>我的订单</text>
+            <text>全部订单></text>
+        </view>
+        <!-- 订单的信息 -->
+        <view class='order_info'>
+            <view class='order_info_area'>
+                <text>1</text>
+                <text>待付款</text>
+            </view>
+            <view class='order_info_area'>
+                <text>2</text>
+                <text>待发货</text>
+            </view>
+            <view class='order_info_area'>
+                <text>3</text>
+                <text>待收货</text>
+            </view>
+            <view class='order_info_area'>
+                <text>0</text>
+                <text>退款/售后</text>
+            </view>
+        </view>
+    </view>
+</block>
+</view>
